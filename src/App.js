@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter basename="/githubsearch">
       <Routes>
-        <Route path="/githubsearch" element={<Home />} />
+        <Route exact path="/githubsearch" element={<Home />} />
         <Route path="/user/:login" element={<User />} />
       </Routes>
     </BrowserRouter>
