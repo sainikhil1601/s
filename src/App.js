@@ -5,9 +5,9 @@ import User from "./components/pages/User/User";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/githubsearch">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/githubsearch" element={<Home />} />
         <Route path="/user/:login" element={<User />} />
       </Routes>
     </BrowserRouter>
